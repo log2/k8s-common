@@ -100,7 +100,7 @@ create_namespace_if_not_exists()
         log "Namespace $(ab "$namespace") already exists, no need to create it"
     else
         log "Namespace $(ab "$namespace") not found, creating it right now"
-        k create namespace flux
+        k create namespace "$namespace"
     fi
 }
 

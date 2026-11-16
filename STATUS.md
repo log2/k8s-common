@@ -9,7 +9,6 @@
 ## Known issues
 
 - `kube-config-azure.sh`: `set_azure_profile` is unimplemented — not a problem as long as no consumer calls it
-- `kube.sh`: `create_namespace_if_not_exists` has a bug — it hardcodes `flux` as the namespace in the create call instead of using the `$namespace` argument
 - `helm.sh`: `getVersion` uses `.$1.deployment.image.tag` as the jq path, which is overly specific and only works with one particular values structure
 
 ## Tech debt
